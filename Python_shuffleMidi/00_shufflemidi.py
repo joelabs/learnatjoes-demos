@@ -5,7 +5,15 @@
 #   random order.  Parameter option to play all, or specify
 #   total number of files to play.
 #
-# 
+#
+# Example Usage:
+# $ python3 00_shufflemidi.py
+# will play all valid midi files in directory in random order
+#
+# $ python3 00_shufflemidi.py 10
+# will play 10 valid midi files in directory in random order
+#
+#
 # Learn At Joes - http://www.learnatjoes.com
 #
 #
@@ -54,7 +62,7 @@ myFiles = os.listdir(".")
 random.shuffle(myFiles)
 
 
-numFiles = len(myFiles)  
+numFiles = len(myFiles)
 idx = 1
 
 reqNumPlays = numFiles;
